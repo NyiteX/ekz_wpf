@@ -20,16 +20,16 @@
             </ImageBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="53*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="81*"></RowDefinition>
-            <RowDefinition Height="48*"></RowDefinition>
+            <RowDefinition Height="52*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="77*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="51*"></ColumnDefinition>
@@ -44,33 +44,33 @@
             <ColumnDefinition Width="51*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [0].X}" Grid.Column="{Binding [0].Y}" Margin="0,0,0,79" Grid.RowSpan="2"/>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [1].X}" Grid.Column="{Binding [1].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [2].X}" Grid.Column="{Binding [2].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [3].X}" Grid.Column="{Binding [3].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [4].X}" Grid.Column="{Binding [4].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [5].X}" Grid.Column="{Binding [5].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [6].X}" Grid.Column="{Binding [6].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [7].X}" Grid.Column="{Binding [7].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [8].X}" Grid.Column="{Binding [8].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [9].X}" Grid.Column="{Binding [9].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [10].X}" Grid.Column="{Binding [10].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [11].X}" Grid.Column="{Binding [11].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
+        <Ellipse Name="yellow_1" Fill="Yellow" Grid.Row="{Binding [0].X}" Grid.Column="{Binding [0].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_2" Fill="Yellow" Grid.Row="{Binding [1].X}" Grid.Column="{Binding [1].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_3" Fill="Yellow" Grid.Row="{Binding [2].X}" Grid.Column="{Binding [2].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+            <Ellipse Name="yellow_4" Fill="Yellow" Grid.Row="{Binding [3].X}" Grid.Column="{Binding [3].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_5" Fill="Yellow" Grid.Row="{Binding [4].X}" Grid.Column="{Binding [4].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+                <Ellipse Name="yellow_6" Fill="Yellow" Grid.Row="{Binding [5].X}" Grid.Column="{Binding [5].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_7" Fill="Yellow" Grid.Row="{Binding [6].X}" Grid.Column="{Binding [6].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_8" Fill="Yellow" Grid.Row="{Binding [7].X}" Grid.Column="{Binding [7].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_9" Fill="Yellow" Grid.Row="{Binding [8].X}" Grid.Column="{Binding [8].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_10" Fill="Yellow" Grid.Row="{Binding [9].X}" Grid.Column="{Binding [9].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_11" Fill="Yellow" Grid.Row="{Binding [10].X}" Grid.Column="{Binding [10].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
+        <Ellipse Name="yellow_12" Fill="Yellow" Grid.Row="{Binding [11].X}" Grid.Column="{Binding [11].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
 
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [0].X}" Grid.Column="{Binding [0].Y}" Margin="0,0,0,79" Grid.RowSpan="2"/>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [1].X}" Grid.Column="{Binding [1].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [2].X}" Grid.Column="{Binding [2].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [3].X}" Grid.Column="{Binding [3].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [4].X}" Grid.Column="{Binding [4].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [5].X}" Grid.Column="{Binding [5].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [6].X}" Grid.Column="{Binding [6].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [7].X}" Grid.Column="{Binding [7].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [8].X}" Grid.Column="{Binding [8].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [9].X}" Grid.Column="{Binding [9].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [10].X}" Grid.Column="{Binding [10].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
-        <Ellipse Fill="Yellow" Grid.Row="{Binding [11].X}" Grid.Column="{Binding [11].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Ellipse>
+        <Ellipse Name="brown_1" Fill="Brown" Grid.Row="{Binding [12].X}" Grid.Column="{Binding [12].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_2" Fill="Black" Grid.Row="{Binding [13].X}" Grid.Column="{Binding [13].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_3" Fill="Black" Grid.Row="{Binding [14].X}" Grid.Column="{Binding [14].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_4" Fill="Black" Grid.Row="{Binding [15].X}" Grid.Column="{Binding [15].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_5" Fill="Black" Grid.Row="{Binding [16].X}" Grid.Column="{Binding [16].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_6" Fill="Black" Grid.Row="{Binding [17].X}" Grid.Column="{Binding [17].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_7" Fill="Black" Grid.Row="{Binding [18].X}" Grid.Column="{Binding [18].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_8" Fill="Black" Grid.Row="{Binding [19].X}" Grid.Column="{Binding [19].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_9" Fill="Black" Grid.Row="{Binding [20].X}" Grid.Column="{Binding [20].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_10" Fill="Black" Grid.Row="{Binding [21].X}" Grid.Column="{Binding [21].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_11" Fill="Black" Grid.Row="{Binding [22].X}" Grid.Column="{Binding [22].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_12" Fill="Black" Grid.Row="{Binding [23].X}" Grid.Column="{Binding [23].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
 
-        <Label Content="{Binding [0].Name}" Grid.Row="{Binding [0].X}" Grid.Column="{Binding [0].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Label>
-        <Label Content="{Binding [1].Name}" Grid.Row="{Binding [1].X}" Grid.Column="{Binding [1].Y}" Margin="0,0,0,79" Grid.RowSpan="2"></Label>
+        <Ellipse Name="while_1" Fill="White" Grid.Row="1" Grid.Column="1" Cursor="Hand" Visibility="Hidden" MouseUp="while_1_MouseUp"/>
+        <Ellipse Name="white_2" Fill="White" Grid.Row="1" Grid.Column="1" Cursor="Hand" Visibility="Hidden" MouseUp="white_2_MouseUp"/>
     </Grid>
 </Window>
