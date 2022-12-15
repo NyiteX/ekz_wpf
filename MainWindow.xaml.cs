@@ -28,7 +28,7 @@ namespace ekz_wpf
         public MainWindow()
         {
             InitializeComponent();
-            
+
             Ini();
             this.DataContext = shipList;
         }
@@ -87,29 +87,155 @@ namespace ekz_wpf
             else if (yellow_12.IsMouseOver) return yellow_12;
             else return null;
         }
+        public Ellipse Collision_check(Ellipse ellipse)
+        {
+            int el_row = Grid.GetRow(ellipse);
+            int el_col = Grid.GetColumn(ellipse);
+            if (!yellow_figure)
+            {
+                if (el_row == Grid.GetRow(brown_1) && el_col == Grid.GetColumn(brown_1) && brown_1.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_2) && el_col == Grid.GetColumn(brown_2) && brown_2.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_3) && el_col == Grid.GetColumn(brown_3) && brown_3.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_4) && el_col == Grid.GetColumn(brown_4) && brown_4.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_5) && el_col == Grid.GetColumn(brown_5) && brown_5.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_6) && el_col == Grid.GetColumn(brown_6) && brown_6.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_7) && el_col == Grid.GetColumn(brown_7) && brown_7.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_8) && el_col == Grid.GetColumn(brown_8) && brown_8.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_9) && el_col == Grid.GetColumn(brown_9) && brown_9.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_10) && el_col == Grid.GetColumn(brown_10) && brown_10.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_11) && el_col == Grid.GetColumn(brown_11) && brown_11.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(brown_12) && el_col == Grid.GetColumn(brown_12) && brown_12.Visibility == Visibility.Visible) return null;
+
+                if (el_row == Grid.GetRow(yellow_1) && el_col == Grid.GetColumn(yellow_1) && yellow_1.Visibility == Visibility.Visible) return yellow_1;
+                if (el_row == Grid.GetRow(yellow_2) && el_col == Grid.GetColumn(yellow_2) && yellow_2.Visibility == Visibility.Visible) return yellow_2;
+                if (el_row == Grid.GetRow(yellow_3) && el_col == Grid.GetColumn(yellow_3) && yellow_3.Visibility == Visibility.Visible) return yellow_3;
+                if (el_row == Grid.GetRow(yellow_4) && el_col == Grid.GetColumn(yellow_4) && yellow_4.Visibility == Visibility.Visible) return yellow_4;
+                if (el_row == Grid.GetRow(yellow_5) && el_col == Grid.GetColumn(yellow_5) && yellow_5.Visibility == Visibility.Visible) return yellow_5;
+                if (el_row == Grid.GetRow(yellow_6) && el_col == Grid.GetColumn(yellow_6) && yellow_6.Visibility == Visibility.Visible) return yellow_6;
+                if (el_row == Grid.GetRow(yellow_7) && el_col == Grid.GetColumn(yellow_7) && yellow_7.Visibility == Visibility.Visible) return yellow_7;
+                if (el_row == Grid.GetRow(yellow_8) && el_col == Grid.GetColumn(yellow_8) && yellow_8.Visibility == Visibility.Visible) return yellow_8;
+                if (el_row == Grid.GetRow(yellow_9) && el_col == Grid.GetColumn(yellow_9) && yellow_9.Visibility == Visibility.Visible) return yellow_9;
+                if (el_row == Grid.GetRow(yellow_10) && el_col == Grid.GetColumn(yellow_10) && yellow_10.Visibility == Visibility.Visible) return yellow_10;
+                if (el_row == Grid.GetRow(yellow_11) && el_col == Grid.GetColumn(yellow_11) && yellow_11.Visibility == Visibility.Visible) return yellow_11;
+                if (el_row == Grid.GetRow(yellow_12) && el_col == Grid.GetColumn(yellow_12) && yellow_12.Visibility == Visibility.Visible) return yellow_12;
+            }
+            else
+            {
+                if (el_row == Grid.GetRow(yellow_1) && el_col == Grid.GetColumn(yellow_1) && yellow_1.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_2) && el_col == Grid.GetColumn(yellow_2) && yellow_2.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_3) && el_col == Grid.GetColumn(yellow_3) && yellow_3.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_4) && el_col == Grid.GetColumn(yellow_4) && yellow_4.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_5) && el_col == Grid.GetColumn(yellow_5) && yellow_5.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_6) && el_col == Grid.GetColumn(yellow_6) && yellow_6.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_7) && el_col == Grid.GetColumn(yellow_7) && yellow_7.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_8) && el_col == Grid.GetColumn(yellow_8) && yellow_8.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_9) && el_col == Grid.GetColumn(yellow_9) && yellow_9.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_10) && el_col == Grid.GetColumn(yellow_10) && yellow_10.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_11) && el_col == Grid.GetColumn(yellow_11) && yellow_11.Visibility == Visibility.Visible) return null;
+                if (el_row == Grid.GetRow(yellow_12) && el_col == Grid.GetColumn(yellow_12) && yellow_12.Visibility == Visibility.Visible) return null;
+
+                if (el_row == Grid.GetRow(brown_1) && el_col == Grid.GetColumn(brown_1) && brown_1.Visibility == Visibility.Visible) return brown_1;
+                if (el_row == Grid.GetRow(brown_2) && el_col == Grid.GetColumn(brown_2) && brown_2.Visibility == Visibility.Visible) return brown_2;
+                if (el_row == Grid.GetRow(brown_3) && el_col == Grid.GetColumn(brown_3) && brown_3.Visibility == Visibility.Visible) return brown_3;
+                if (el_row == Grid.GetRow(brown_4) && el_col == Grid.GetColumn(brown_4) && brown_4.Visibility == Visibility.Visible) return brown_4;
+                if (el_row == Grid.GetRow(brown_5) && el_col == Grid.GetColumn(brown_5) && brown_5.Visibility == Visibility.Visible) return brown_5;
+                if (el_row == Grid.GetRow(brown_6) && el_col == Grid.GetColumn(brown_6) && brown_6.Visibility == Visibility.Visible) return brown_6;
+                if (el_row == Grid.GetRow(brown_7) && el_col == Grid.GetColumn(brown_7) && brown_7.Visibility == Visibility.Visible) return brown_7;
+                if (el_row == Grid.GetRow(brown_8) && el_col == Grid.GetColumn(brown_8) && brown_8.Visibility == Visibility.Visible) return brown_8;
+                if (el_row == Grid.GetRow(brown_9) && el_col == Grid.GetColumn(brown_9) && brown_9.Visibility == Visibility.Visible) return brown_9;
+                if (el_row == Grid.GetRow(brown_10) && el_col == Grid.GetColumn(brown_10) && brown_10.Visibility == Visibility.Visible) return brown_10;
+                if (el_row == Grid.GetRow(brown_11) && el_col == Grid.GetColumn(brown_11) && brown_11.Visibility == Visibility.Visible) return brown_11;
+                if (el_row == Grid.GetRow(brown_12) && el_col == Grid.GetColumn(brown_12) && brown_12.Visibility == Visibility.Visible) return brown_12;
+            }
+            return new Ellipse();
+        }
         public bool White_path(int row, int column)
         {
             try
             {
+                Ellipse tmp = new Ellipse();
                 if (!yellow_figure)
                 {
-                    Grid.SetRow(while_1, row - step);
-                    Grid.SetColumn(while_1, column + step);
-                    Grid.SetRow(white_2, row - step);
-                    Grid.SetColumn(white_2, column - step);                                    
+                    if (row - step > 0 && column + step < 9)
+                    {
+                        Grid.SetRow(while_1, row - step);
+                        Grid.SetColumn(while_1, column + step);
+                        tmp = Collision_check(while_1);
+                        if (tmp != null)
+                        {
+                            if (Grid.GetRow(tmp) == 0)
+                            {
+                                step = 1;
+                                while_1.Visibility = Visibility.Visible;
+                            }
+                            else
+                            {
+                                step = 2;
+                            }
+                        }
+                    }
+                    if (row - step > 0 && column - step > 0)
+                    {
+                        Grid.SetRow(white_2, row - step);
+                        Grid.SetColumn(white_2, column - step);
+                        tmp = Collision_check(white_2);
+                        if (tmp != null)
+                        {
+                            if (Grid.GetRow(tmp) == 0)
+                            {
+                                step = 1;
+                                white_2.Visibility = Visibility.Visible;
+                            }
+                            else
+                            {
+                                step = 2;
+                            }
+                        }
+                    }
                 }
                 else
                 {
-                    Grid.SetRow(while_1, row + step);
-                    Grid.SetColumn(while_1, column - step);
-                    Grid.SetRow(white_2, row + step);
-                    Grid.SetColumn(white_2, column + step);
+                    if (row + step < 9 && column - step > 0)
+                    {
+                        Grid.SetRow(while_1, row + step);
+                        Grid.SetColumn(while_1, column - step);
+                        tmp = Collision_check(while_1);
+                        if (tmp != null)
+                        {
+                            if (Grid.GetRow(tmp) == 0)
+                            {
+                                step = 1;
+                                while_1.Visibility = Visibility.Visible;
+                            }
+                            else
+                            {
+                                step = 2;
+                            }
+                        }
+                    }
+                    if (row + step < 9 && column + step < 9)
+                    {
+                        Grid.SetRow(white_2, row + step);
+                        Grid.SetColumn(white_2, column + step);
+                        tmp = Collision_check(white_2);
+                        if (tmp != null)
+                        {
+                            if (Grid.GetRow(tmp) == 0)
+                            {
+                                step = 1;
+                                white_2.Visibility = Visibility.Visible;
+                            }
+                            else
+                            {
+                                step = 2;
+                            }
+                        }
+
+                    }
                 }
-                while_1.Visibility = Visibility.Visible;
-                white_2.Visibility = Visibility.Visible;
                 return true;
             }
-            catch(Exception E) { MessageBox.Show(E.Message); }
+            catch (Exception E) { MessageBox.Show(E.Message); }
             return false;
         }
         public void Move_figure(Ellipse ellipse,string path)
@@ -124,7 +250,9 @@ namespace ekz_wpf
                 column_new = Grid.GetColumn(ellipse) - step;
                 if (path == "left")
                     column_new = Grid.GetColumn(ellipse) + step;
+                yellow_figure = false;
             }
+            else yellow_figure = true;
 
             while_1.Visibility = Visibility.Hidden;
             white_2.Visibility = Visibility.Hidden;
@@ -132,20 +260,28 @@ namespace ekz_wpf
             {
                 Grid.SetRow(ellipse, row_new);
                 Grid.SetColumn(ellipse, column_new);
-            }           
+            }       
         }
         private void brown_1_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            active_figure = isActive_figure_brown();
+        {            
             if (!yellow_figure)
+            {
+                while_1.Visibility = Visibility.Hidden;
+                white_2.Visibility = Visibility.Hidden;
+                active_figure = isActive_figure_brown();
                 White_path(Grid.GetRow(active_figure), Grid.GetColumn(active_figure));
+            }
         }
 
         private void yellow_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            active_figure = isActive_figure_yellow();
             if (yellow_figure)
+            {
+                while_1.Visibility = Visibility.Hidden;
+                white_2.Visibility = Visibility.Hidden;
+                active_figure = isActive_figure_yellow();
                 White_path(Grid.GetRow(active_figure), Grid.GetColumn(active_figure));
+            }
         }
 
         private void while_1_MouseUp(object sender, MouseButtonEventArgs e)
@@ -155,12 +291,10 @@ namespace ekz_wpf
                 if (!yellow_figure)
                 {
                     Move_figure(active_figure, "right");
-                    yellow_figure = true;
                 }
                 else
                 {
                     Move_figure(active_figure, "right");
-                    yellow_figure = false;
                 }
             }
         }
@@ -172,12 +306,10 @@ namespace ekz_wpf
                 if (!yellow_figure)
                 {
                     Move_figure(active_figure, "left");
-                    yellow_figure = true;
                 }
                 else
                 {
                     Move_figure(active_figure, "left");
-                    yellow_figure = false;
                 }
             }           
         }
