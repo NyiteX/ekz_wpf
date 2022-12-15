@@ -165,12 +165,14 @@ namespace ekz_wpf
                         {
                             if (Grid.GetRow(tmp) == 0)
                             {
-                                step = 1;
+                                
                                 while_1.Visibility = Visibility.Visible;
+                                return true;
                             }
                             else
                             {
                                 step = 2;
+                                White_path(row, column);
                             }
                         }
                     }
@@ -183,12 +185,13 @@ namespace ekz_wpf
                         {
                             if (Grid.GetRow(tmp) == 0)
                             {
-                                step = 1;
                                 white_2.Visibility = Visibility.Visible;
+                                return true;
                             }
                             else
                             {
                                 step = 2;
+                                White_path(row, column);
                             }
                         }
                     }
@@ -204,12 +207,13 @@ namespace ekz_wpf
                         {
                             if (Grid.GetRow(tmp) == 0)
                             {
-                                step = 1;
                                 while_1.Visibility = Visibility.Visible;
+                                return true;
                             }
                             else
                             {
                                 step = 2;
+                                White_path(row, column);
                             }
                         }
                     }
@@ -222,12 +226,13 @@ namespace ekz_wpf
                         {
                             if (Grid.GetRow(tmp) == 0)
                             {
-                                step = 1;
                                 white_2.Visibility = Visibility.Visible;
+                                return true;
                             }
                             else
                             {
                                 step = 2;
+                                White_path(row, column);
                             }
                         }
 
@@ -260,7 +265,8 @@ namespace ekz_wpf
             {
                 Grid.SetRow(ellipse, row_new);
                 Grid.SetColumn(ellipse, column_new);
-            }       
+            }
+            step = 1;
         }
         private void brown_1_MouseUp(object sender, MouseButtonEventArgs e)
         {            
@@ -314,7 +320,6 @@ namespace ekz_wpf
             }           
         }
     }
-
 
     public class Ship
     {
