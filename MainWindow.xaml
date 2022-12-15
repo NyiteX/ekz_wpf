@@ -70,7 +70,7 @@
         <Ellipse Name="brown_11" Fill="Black" Grid.Row="{Binding [22].X}" Grid.Column="{Binding [22].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
         <Ellipse Name="brown_12" Fill="Black" Grid.Row="{Binding [23].X}" Grid.Column="{Binding [23].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
 
-        <Ellipse Name="while_1" Fill="White" Grid.Row="1" Grid.Column="1" Cursor="Hand" Visibility="Hidden" MouseUp="while_1_MouseUp"/>
-        <Ellipse Name="white_2" Fill="White" Grid.Row="1" Grid.Column="1" Cursor="Hand" Visibility="Hidden" MouseUp="white_2_MouseUp"/>
+        <Ellipse Name="while_1" Fill="White" Grid.Row="0" Grid.Column="0" Cursor="Hand" Visibility="Hidden" MouseUp="while_1_MouseUp"/>
+        <Ellipse Name="white_2" Fill="White" Grid.Row="0" Grid.Column="0" Cursor="Hand" Visibility="Hidden" MouseUp="white_2_MouseUp"/>
     </Grid>
 </Window>
