@@ -153,6 +153,23 @@ namespace ekz_wpf
             }
             return new Ellipse();
         }
+        public string Finish_check()
+        {
+            bool brown = true, yellow = true;
+
+            if (!brown_1.IsVisible && !brown_2.IsVisible && !brown_3.IsVisible && !brown_4.IsVisible && !brown_5.IsVisible &&
+                !brown_6.IsVisible && !brown_7.IsVisible && !brown_8.IsVisible && !brown_9.IsVisible && !brown_10.IsVisible &&
+                !brown_11.IsVisible && !brown_12.IsVisible) { brown = false; }
+            if (!yellow_1.IsVisible && !yellow_2.IsVisible && !yellow_3.IsVisible && !yellow_4.IsVisible && !yellow_5.IsVisible &&
+                !yellow_6.IsVisible && !yellow_7.IsVisible && !yellow_8.IsVisible && !yellow_9.IsVisible && !yellow_10.IsVisible &&
+                !yellow_11.IsVisible && !yellow_12.IsVisible) { yellow = false; }
+
+            if (brown && yellow == false) return "brown_yellow";
+            else if (brown == false) { return "brown"; }
+            else if (yellow == false) { return "yellow"; }
+
+            return "";
+        }
         public bool White_path(int row, int column)
         {
             try
@@ -254,7 +271,8 @@ namespace ekz_wpf
             int column_new = Grid.GetColumn(ellipse) + step;
             if (path == "left")
                 column_new = Grid.GetColumn(ellipse) - step;
-            else removed_figure = removed_figure2;
+            else 
+                removed_figure = removed_figure2;
 
             if (yellow_figure)
             {
@@ -276,6 +294,13 @@ namespace ekz_wpf
                 Grid.SetRow(removed_figure, 0);
                 Grid.SetColumn(removed_figure, 0);
                 removed_figure.Visibility= Visibility.Hidden;
+
+                removed_figure = new Ellipse();
+                removed_figure2 = new Ellipse();
+                string str = Finish_check();
+                if (str == "brown") Title = "Brown WIN";
+                else if (str == "yellow") Title = "Yellow WIN";
+                else if (str == "brown_yellow") Title = "ni4ya";
             }
             step = 1;
             step2 = 1;
