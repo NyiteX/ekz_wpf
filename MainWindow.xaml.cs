@@ -216,7 +216,7 @@ namespace ekz_wpf
                             }
                             else
                             {
-                                removed_figure = tmp;
+                                removed_figure2 = tmp;
                                 step = 2;
                             }
                         }
@@ -235,7 +235,7 @@ namespace ekz_wpf
                             }
                             else
                             {
-                                removed_figure2 = tmp;
+                                removed_figure = tmp;
                                 step2 = 2;                               
                             }
                         }
@@ -254,8 +254,8 @@ namespace ekz_wpf
             int column_new = Grid.GetColumn(ellipse) + step;
             if (path == "left")
                 column_new = Grid.GetColumn(ellipse) - step;
-            else
-                removed_figure = removed_figure2;
+            else removed_figure = removed_figure2;
+
             if (yellow_figure)
             {
                 row_new = Grid.GetRow(ellipse) + step;

@@ -57,7 +57,7 @@
         <Ellipse Name="yellow_11" Fill="Yellow" Grid.Row="{Binding [10].X}" Grid.Column="{Binding [10].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
         <Ellipse Name="yellow_12" Fill="Yellow" Grid.Row="{Binding [11].X}" Grid.Column="{Binding [11].Y}" Cursor="Hand" MouseUp="yellow_MouseUp"/>
 
-        <Ellipse Name="brown_1" Fill="Brown" Grid.Row="{Binding [12].X}" Grid.Column="{Binding [12].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
+        <Ellipse Name="brown_1" Fill="Black" Grid.Row="{Binding [12].X}" Grid.Column="{Binding [12].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
         <Ellipse Name="brown_2" Fill="Black" Grid.Row="{Binding [13].X}" Grid.Column="{Binding [13].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
         <Ellipse Name="brown_3" Fill="Black" Grid.Row="{Binding [14].X}" Grid.Column="{Binding [14].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
         <Ellipse Name="brown_4" Fill="Black" Grid.Row="{Binding [15].X}" Grid.Column="{Binding [15].Y}" Cursor="Hand" MouseUp="brown_1_MouseUp"/>
