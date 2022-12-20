@@ -258,6 +258,7 @@ namespace ekz_wpf
                         }
                     }
                 }
+
                 this.Title = path;
                 return true;
             }
